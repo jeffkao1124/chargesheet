@@ -9,8 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script>
 	function initializeApp(data) {  //初始化LIFF
-		var userid = data.context.userId;
-		alert(userid);  //取得ID
+		var userid = data.context.userId; //取得ID
 	}
 
 	function pushMsg(name, datetime, sel_room) {
@@ -25,7 +24,7 @@
 		alert(msg);
 		liff.sendMessages([  //推播訊息
 			{ type: 'text',
-			  text: msg
+			  text: '你好'
 			}
 		])
 			.then(() => {
