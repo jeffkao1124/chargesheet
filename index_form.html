@@ -13,14 +13,15 @@
 	}
 
 	function pushMsg(name, datatime, sel_room) {
-		/*if (name == '' || datatime == '' || sel_room == '') {  //資料檢查
+		if (name == '' || datatime == '' || sel_room == '') {  //資料檢查
 			alert('每個項目都必須輸入！');
 			return;
-		}*/
+		}
 		var msg = "###";  //回傳訊息字串
 		msg = msg + name + "/";
 		msg = msg + datatime + "/";
 		msg = msg + sel_room;
+		alert(msg);
 		liff.sendMessages([  //推播訊息
 			{ type: 'text',
 			  text: msg
