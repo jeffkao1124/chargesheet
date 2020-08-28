@@ -24,8 +24,8 @@
 		alert(msg);
 		liff.sendMessages([  //推播訊息
 			{ type: 'text',
-			  text: '你好'
-			}
+			  text: msg ,
+			},
 		])
 			.then(() => {
 				liff.closeWindow();  //關閉視窗
