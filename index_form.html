@@ -12,15 +12,15 @@
 		var userid = data.context.userId;  //取得ID
 	}
 
-	function pushMsg(name, datatime, room) {
-		if (name == '' || datatime == '' || room == '') {  //資料檢查
+	function pushMsg(name, datatime, sel_room) {
+		/*if (name == '' || datatime == '' || sel_room == '') {  //資料檢查
 			alert('每個項目都必須輸入！');
 			return;
-		}
+		}*/
 		var msg = "###";  //回傳訊息字串
 		msg = msg + name + "/";
 		msg = msg + datatime + "/";
-		msg = msg + room;
+		msg = msg + sel_room;
 		liff.sendMessages([  //推播訊息
 			{ type: 'text',
 			  text: msg
