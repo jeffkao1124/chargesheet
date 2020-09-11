@@ -26,6 +26,14 @@
 			  text: msg 
 			},
 		])
+		sleep(2000).then(() =>
+        {
+            liff.sendMessages([ 
+			{ type: 'text',
+			  text: msg
+            },
+        ])
+})
 			.then(() => {
 				liff.closeWindow();  //關閉視窗
 			});
